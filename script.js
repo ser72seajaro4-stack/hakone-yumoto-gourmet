@@ -1,0 +1,1 @@
+document.querySelectorAll(".filter").forEach(button=>{button.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));button.classList.add("active");const selected=button.dataset.filter;document.querySelectorAll(".food-card").forEach(card=>{card.hidden=selected!=="すべて"&&card.dataset.category!==selected;});});});
